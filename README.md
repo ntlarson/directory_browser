@@ -156,9 +156,13 @@ const directorystats = {
 
 ###### Technology:
 The frontend will be written using React and Typescript. Supporting modules and packages will be: 
+
 `create-react-app` to bootstrap and manage the basic build for this application
+
 `react-router` to manage client side routing
+
 `fetch` native browser http client
+
 `react-feather` for icon support
 
 ###### Application Design:

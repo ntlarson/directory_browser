@@ -14,22 +14,34 @@ The backend will be written in NodeJs with Typescript and Express
 I am a fan of versioned api's to allow for better deprecation, organization, and controlled support. For the basic nature of the application I am designing, I intend to support the following behaviors:
 
 1) Login
-    - route: /api/v1/login
-    - method: POST
-    - payload: {username: string, password: string}
-    - response: 200 if successful, 401 if not
+
+-- route: /api/v1/login
+
+-- method: POST
+
+-- payload: {username: string, password: string}
+
+-- response: 200 if successful, 401 if not
 
 2) Logout
-    - route: /api/v1/logout
-    - method: GET
-    - payload: nothing
-    - response: 200 on successful clearing of the associated session/cookie
+
+-- route: /api/v1/logout
+
+-- method: GET
+
+-- payload: nothing
+
+-- response: 200 on successful clearing of the associated session/cookie
 
 3) list-dir
-    - route: /api/v1/lsdir
-    - method: GET
-    - query params: I will support a `prefix` query param to allow drilling down into sub-directories via the api
-    - response: a JSON string representation of the directory contents
+
+-- route: /api/v1/lsdir
+
+-- method: GET
+
+-- query params: I will support a `prefix` query param to allow drilling down into sub-directories via the api
+
+-- response: a JSON string representation of the directory contents
 
 ###### Security:
 
